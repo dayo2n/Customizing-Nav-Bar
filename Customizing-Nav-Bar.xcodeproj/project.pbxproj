@@ -12,6 +12,7 @@
 		0B12483B2C4F4FB6007C18F1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0B12483A2C4F4FB6007C18F1 /* Base */; };
 		0B12483D2C4F4FB7007C18F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B12483C2C4F4FB7007C18F1 /* Assets.xcassets */; };
 		0B1248402C4F4FB7007C18F1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0B12483F2C4F4FB7007C18F1 /* Base */; };
+		0B3D29B92C4FA0AE007AC9A0 /* CustomTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3D29B82C4FA0AE007AC9A0 /* CustomTitleViewController.swift */; };
 		0BB2659E2C4F6C59009AD052 /* CitiesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB2659D2C4F6C59009AD052 /* CitiesDataSource.swift */; };
 		0BB265A22C4F6CFC009AD052 /* Cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 0BB265A12C4F6CFC009AD052 /* Cities.json */; };
 		0BB265A42C4F6E74009AD052 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB265A32C4F6E74009AD052 /* MainViewController.swift */; };
@@ -26,6 +27,7 @@
 		0B12483C2C4F4FB7007C18F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B12483F2C4F4FB7007C18F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B1248412C4F4FB7007C18F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3D29B82C4FA0AE007AC9A0 /* CustomTitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTitleViewController.swift; sourceTree = "<group>"; };
 		0BB2659D2C4F6C59009AD052 /* CitiesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesDataSource.swift; sourceTree = "<group>"; };
 		0BB265A12C4F6CFC009AD052 /* Cities.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cities.json; sourceTree = "<group>"; };
 		0BB265A32C4F6E74009AD052 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 			name = CustomRightView;
 			sourceTree = "<group>";
 		};
+		0B3D29B72C4FA09D007AC9A0 /* CustomTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				0B3D29B82C4FA0AE007AC9A0 /* CustomTitleViewController.swift */,
+			);
+			name = CustomTitleView;
+			sourceTree = "<group>";
+		};
 		0BB2659F2C4F6C9E009AD052 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 				0BB2659D2C4F6C59009AD052 /* CitiesDataSource.swift */,
 				0B3D29B42C4F9A0D007AC9A0 /* Main */,
 				0B3D29B62C4F9A26007AC9A0 /* CustomRightView */,
+				0B3D29B72C4FA09D007AC9A0 /* CustomTitleView */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -184,6 +195,7 @@
 				0B1248342C4F4FB6007C18F1 /* AppDelegate.swift in Sources */,
 				0BB265A62C4F7029009AD052 /* CustomRightViewController.swift in Sources */,
 				0B1248362C4F4FB6007C18F1 /* SceneDelegate.swift in Sources */,
+				0B3D29B92C4FA0AE007AC9A0 /* CustomTitleViewController.swift in Sources */,
 				0BB265A42C4F6E74009AD052 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

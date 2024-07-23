@@ -69,6 +69,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tbh-VV-E0a" kind="show" id="2q7-u3-31W"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="1Qm-kB-Qpu" detailTextLabel="UWH-rU-NoB" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Rxn-W2-Jsh">
                                         <rect key="frame" x="0.0" y="170" width="393" height="60"/>
@@ -252,6 +255,33 @@
             </objects>
             <point key="canvasLocation" x="-620" y="13"/>
         </scene>
+        <!--Custom Title View Controller-->
+        <scene sceneID="Gw9-Ny-y2x">
+            <objects>
+                <viewController id="tbh-VV-E0a" customClass="CustomTitleViewController" customModule="Customizing_Nav_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rh6-3g-fDb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cyy-O7-y7g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="29K-Wo-W0y">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Ni1-I8-l7i">
+                            <rect key="frame" x="111.66666666666669" y="5.6666666666666679" width="170" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Image"/>
+                                <segment title="Text"/>
+                                <segment title="Video"/>
+                            </segments>
+                        </segmentedControl>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nz-sa-bdh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="573" y="-406"/>
+        </scene>
         <!--Custom Right View Controller-->
         <scene sceneID="xRt-CH-kfx">
             <objects>
@@ -295,7 +325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1V-bF-8AL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="-662"/>
+            <point key="canvasLocation" x="575" y="-1082"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ou3-di-UnQ">
