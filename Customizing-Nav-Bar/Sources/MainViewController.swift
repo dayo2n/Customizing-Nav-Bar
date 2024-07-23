@@ -14,4 +14,8 @@ final class MainViewController: UITableViewController {
 //        self.navigationController?.navigationBar.isTranslucent = false
 //        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
+    
+    @IBAction func unwindToMainViewController(_ sender: UIStoryboardSegue) {
+        tableView.deselectRow(at: tableView!.indexPathForSelectedRow!, animated: false)
+    }
 }

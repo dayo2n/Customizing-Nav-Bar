@@ -123,6 +123,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="5pt-h1-6lr" kind="presentation" id="e9L-ts-9WC"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="wDu-q6-Gk5" detailTextLabel="ybb-ac-9Ps" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Hma-63-Pdx">
                                         <rect key="frame" x="0.0" y="290" width="393" height="60"/>
@@ -272,7 +275,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygH-3y-Wkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="263"/>
+            <point key="canvasLocation" x="575" y="290"/>
+        </scene>
+        <!--Custom Appearance-->
+        <scene sceneID="4uZ-Bo-BE0">
+            <objects>
+                <tableViewController id="QI8-4b-16V" customClass="CustomAppearanceViewController" customModule="Customizing_Nav_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DcG-Ui-0kp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="wth-WT-8bX">
+                                <rect key="frame" x="0.0" y="50" width="393" height="52.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wth-WT-8bX" id="4Lc-yo-bIm">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="52.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QI8-4b-16V" id="e3M-hN-3cq"/>
+                            <outlet property="delegate" destination="QI8-4b-16V" id="7bA-sm-Kw9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Custom Appearance" id="wc5-1j-wGE">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="PwM-78-OTp">
+                            <connections>
+                                <segue destination="qSS-is-WIK" kind="unwind" unwindAction="unwindToMainViewController:" id="kCB-Ug-KRN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backgroundSwitcher" destination="Crl-jD-qqz" id="LEU-Jw-cvJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qKl-ky-htu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Crl-jD-qqz">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Image"/>
+                        <segment title="Color"/>
+                    </segments>
+                    <connections>
+                        <action selector="backgroundValueChanged:" destination="QI8-4b-16V" eventType="valueChanged" id="TvG-oy-HiT"/>
+                    </connections>
+                </segmentedControl>
+                <exit id="qSS-is-WIK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="994"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="e7m-YK-Ax1">
+            <objects>
+                <navigationController id="5pt-h1-6lr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zfB-gd-Gep">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QI8-4b-16V" kind="relationship" relationship="rootViewController" id="0ch-EH-8cL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hr4-Kq-TgB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="994"/>
         </scene>
         <!--Custom Title View Controller-->
         <scene sceneID="Gw9-Ny-y2x">
