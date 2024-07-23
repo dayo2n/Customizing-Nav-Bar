@@ -96,6 +96,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Laa-T0-AmH" kind="show" id="guG-bE-K4e"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Rw9-9P-hM0" detailTextLabel="ZGn-OS-bdV" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="t1D-Pr-F4U">
                                         <rect key="frame" x="0.0" y="230" width="393" height="60"/>
@@ -254,6 +257,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SuJ-Hc-qHr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-620" y="13"/>
+        </scene>
+        <!--Navigation Prompt View Controller-->
+        <scene sceneID="t3o-hA-IWg">
+            <objects>
+                <viewController id="Laa-T0-AmH" customClass="NavigationPromptViewController" customModule="Customizing_Nav_Bar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pX1-le-FZr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ELJ-H9-Gev"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Zkn-ug-nMI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygH-3y-Wkc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="263"/>
         </scene>
         <!--Custom Title View Controller-->
         <scene sceneID="Gw9-Ny-y2x">
