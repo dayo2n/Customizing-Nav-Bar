@@ -60,7 +60,7 @@ final class CustomAppearanceViewController: UITableViewController {
         guard let bounds = navigationController?.navigationBar.bounds else { return }
         let backgroundImageMetrics = UIImage.gradientImage(
             bounds: bounds,
-            colors: [UIColor.systemBlue.cgColor, UIColor.systemCyan.cgColor]
+            colors: [#colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1), #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)]
         ).resizableImage(
             withCapInsets: UIEdgeInsets(
                 top: 0,
